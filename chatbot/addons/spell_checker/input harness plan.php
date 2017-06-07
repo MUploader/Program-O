@@ -94,4 +94,19 @@
     
   }
 
+  sentence_catergory('this is a bee talking to you');
+ 
+ function sentence_catergory($sentence){
+   // Init Vars
+      $this_folder = dirname(realpath(__FILE__)) . DIRECTORY_SEPARATOR;
+      define('SPELLCHECK_PATH', $this_folder);
+      // Load the word arrays - located in the sub-folder 'datasets' in the spellcheck dir
+                                                                                                    */
+         $files = glob(".\datasets\*.dat");
+         var_dump($files);
+         foreach ($files as &$datasetnames) {
+            $dataset[$datasetnames] = file ($datasetnames, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+         }
+         var_dump($dataset);
+
 ?>
