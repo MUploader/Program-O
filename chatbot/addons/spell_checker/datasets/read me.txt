@@ -1,0 +1,13 @@
+actionwords**
+logicalwords**
+--------
+famouspeople
+boysnames
+girlsnames
+--------
+pets   
+animal
+--------
+famouslocations
+countries
+--------
